@@ -1,0 +1,9 @@
+<section class="d-flex flex-column position-relative z-1 ">
+    <div class="ratio ratio-3x4 overflow-hidden rounded">
+        <img :src="src" alt="service" class=" img-zoom img-fluid object-fit-cover rounded img-brightness rounded">
+    </div>
+    <div class="pot-info px-3 rounded">
+        <h5 class="text-light text-fade fs-5 pop border-start border-5 ps-2 border-info">{{title}}</h5>
+        <p class="bg-glass rounded p-2 text-light font-monospace"><slot></slot></p>
+    </div>
+</section>

@@ -1,0 +1,52 @@
+<header class="w-100 text-light p-3 position-fixed z-2 top-0 start-0 d-flex justify-content-between align-items-center">
+    <section>
+      <a class="no-decoration" :href="utilities.env('/')" >
+        <div class="d-flex gap-1 align-items-center">
+          <img src="https://drive.google.com/uc?id=13jO0AglHi7Nb6OkX2n8ILNVho4R9JMm3" alt="logo" class="img-fluid" width="50">
+          <h1 class="fs-3 ls-2 bebas text-shadoww m-0 text-center text-md-start">IncuGameCon</h1>
+        </div>
+      </a>
+    </section>
+    
+    <nav class="d-none d-md-flex gap-3 align-items-center pop text-uppercase fs-6"> 
+      <!-- <a href="#"><i class="bi bi-whatsapp"></i></a> -->
+      <!-- <a href="#">Home</a> -->
+      <!-- <a href="#about">About</a> -->
+      <a :href="utilities.env('/services.html')">Services</a>
+      <a :href="utilities.env('/projects.html')">Projects</a>
+      <a :href="utilities.env('/team.html')">Team</a>
+      <a :href="utilities.env('/blogs')">Blogs</a>
+      <span data-bs-toggle="dropdown" class="point">Terms and Policies</span>
+      <ul class="dropdown-menu">
+        <li><a class="dropdown-item" :href="utilities.env('/terms.html')">Terms of use</a></li>
+        <li><a class="dropdown-item" :href="utilities.env('/disclaimer.html')">Disclaimer</a></li>
+        <li><a class="dropdown-item" :href="utilities.env('/privacy-policy.html')">Privacy policy</a></li>
+        <!-- <li><a class="dropdown-item" href="#">Cookies Policies</a></li> -->
+        <li><a class="dropdown-item" :href="utilities.env('/acceptable-use.html')">Acceptable use</a></li>
+      </ul>
+      <a href="https://wa.me/+17167309932" class="btn btn-sm btn-info">Contact</a>
+    </nav>
+    <!-- <i class=" bi bi-three-dots-vertical text-neon fs-3" data-bs-toggle="dropdown"></i>
+    <ul class="dropdown-menu">
+      <li><a href="#about" class="dropdown-item">About</a></li>
+      <li><a href="#services" class="dropdown-item">Services</a></li>
+      <li><a href="#projects" class="dropdown-item">Projects</a></li>
+      <li><a href="https://wa.me/+17167309932" class="dropdown-item btn btn-sm btn-info">Contact</a></li>
+    </ul> -->
+    <i class="d-block d-md-none bi bi-three-dots-vertical text-neon fs-3" type="button" data-bs-toggle="dropdown" aria-expanded="false"></i>
+    <ul class="dropdown-menu">
+      <!-- <li><a href="#about" class="dropdown-item">About</a></li> -->
+      <li><a :href="utilities.env('/services.html')" class="dropdown-item">Services</a></li>
+      <li><a :href="utilities.env('/projects.html')" class="dropdown-item">Projects</a></li>
+      <li><a :href="utilities.env('/team.html')" class="dropdown-item">Team</a></li>
+      <li><a :href="utilities.env('/blogs')" class="dropdown-item">Blogs</a></li>
+      
+      <li><a class="dropdown-item" :href="utilities.env('/terms.html')">Terms of use</a></li>
+      <li><a class="dropdown-item" :href="utilities.env('/disclaimer.html')">Disclaimer</a></li>
+      <li><a class="dropdown-item" :href="utilities.env('/privacy-policy.html')">Privacy policy</a></li>
+      <!-- <li><a class="dropdown-item" href="#">Cookies Policies</a></li> -->
+      <li><a class="dropdown-item" :href="utilities.env('/acceptable-use.html')">Acceptable use</a></li>
+      
+      <li><a href="https://wa.me/+17167309932" class="dropdown-item btn btn-sm btn-info">Contact</a></li>
+    </ul>
+</header>

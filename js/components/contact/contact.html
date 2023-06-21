@@ -1,0 +1,80 @@
+<section class="container">
+    <div class="row gy-5 gx-3 justify-content-between pop">
+        <section class="col-md-12 col-lg-5">
+            <div class="d-flex flex-column gap-1">
+                <h2 class="fs-4 text-light opacity-75 m-0">Incugamecon</h2>
+                <p class="fs-smaller text-light opacity-50">We specialise in providing media consultancy and intellectual property incubation services to gaming, film, TV companies and entrepreneurs.</p>
+                <div class="d-flex flex-column gap-2 text-warning-hover-links">
+                    <a href="mailto:info@incugamecon.media" class="text-secondary link-light link-underline-opacity-0 d-flex gap-3 align-items-center">
+                        <i class="fs-5 bi bi-envelope "></i>
+                        <span>info@incugamecon.media</span>
+                    </a>
+                    <a href="https://wa.me/+17167309932" class="text-secondary link-light link-underline-opacity-0 d-flex gap-3 align-items-center">
+                        <i class="fs-5 bi bi-whatsapp "></i>
+                        <span>Whatsapp</span>
+                    </a>
+                    
+                    <span  data-bs-toggle="dropdown" class="point text-secondary link-light link-underline-opacity-0 d-flex gap-3 align-items-center">
+                        <i class="fs-5 bi bi-shield-fill-check "></i>
+                        <span>Terms & Policies</span>
+                    </span>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" :href="utilities.env('/terms.html')">Terms of use</a></li>
+                        <li><a class="dropdown-item" :href="utilities.env('/disclaimer.html')">Disclaimer</a></li>
+                        <li><a class="dropdown-item" :href="utilities.env('/privacy-policy.html')">Privacy policy</a></li>
+                        <!-- <li><a class="dropdown-item" href="#">Cookies Policies</a></li> -->
+                        <li><a class="dropdown-item" :href="utilities.env('/acceptable-use.html')">Acceptable use</a></li>
+                      </ul>
+                    <!-- <a href="https://www.linkedin.com/company/88963469/admin/" class="text-secondary link-light link-underline-opacity-0 d-flex gap-3 align-items-center">
+                        <i class="fs-5 bi bi-linkedin text-secondary"></i>
+                        <span>LinkedIn</span>
+                    </a> -->
+                    <!-- <a :href="store.profile.contact.instagram" class="text-secondary link-light link-underline-opacity-0 d-flex gap-3 align-items-center">
+                        <i class="fs-5 bi bi-instagram text-secondary"></i>
+                        <span>Instagram</span>
+                    </a> -->
+                    
+                    <!-- <span class="text-secondary d-flex gap-3 align-items-center">
+                        <i class="fs-5 bi bi-geo-alt-fill text-secondary"></i>
+                        <span>{{store.profile.contact.address}}</span>
+                    </span> -->
+                </div>
+            </div>
+        </section>
+        <section class="col-md-12 col-lg-3">
+            <div class="d-flex flex-column gap-1">
+                
+                <h2 class="fs-4 text-light opacity-75 m-0">Our Services</h2>
+                <p class="fs-smaller text-light opacity-50">At IncuGameCon, we tailor our services to meet the specific needs of our clients.</p>
+                <div class="d-flex flex-column gap-2 text-warning-hover-links">
+                    <a 
+                        v-for="link in store.profile.services" :key="link"
+                        :href="link.url" 
+                        class="link-underline-opacity-0 link-underline text-secondary m-0 d-flex align-items-center gap-1">
+                        <span class="material-symbols-outlined fs-4">link</span>
+                        <span class="text-fade">{{link.title}}</span>
+                    </a>
+                </div>
+            </div>
+        </section>
+        <section class="col-md-12 col-lg-3">
+            <div class="d-flex flex-column gap-1">
+                
+                <h2 class="fs-4 text-light opacity-75 m-0">Also Check</h2>
+                <!-- <p class="fs-smaller text-light opacity-50">Our team is committed to delivering the highest level of service to our clients.</p> -->
+                <div class="d-flex flex-column gap-2 text-warning-hover-links">
+                    <a 
+                        v-for="l in store.profile.links" :key="l"
+                        :href="l.url" 
+                        class="link-underline-opacity-0 link-underline text-secondary m-0 d-flex align-items-center gap-1">
+                        <span class="material-symbols-outlined fs-4">link</span>
+                        <span class="text-fade">{{l.text}}</span>
+                    </a>
+                </div>
+            </div>
+        </section>
+    </div>
+</section>
+
+<hr class="container my-4 text-light">
+<a class="text-secondary pop link-underline link-underline-opacity-0 text-center" href="http://wa.mashoun.com"><h6 class="fs-smaller">All Rights Reserved</h6></a>

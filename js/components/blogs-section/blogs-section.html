@@ -1,0 +1,26 @@
+<section class="container">
+    <div class="row g-4">
+        <div class="col-12">
+            <title-section :title="store.profile.contact.bHeading">{{store.profile.contact.bTagline}}</title-section>
+        </div>
+        
+        <!-- <div class="col-12 col-lg-4" data-aos="flip-right" data-aos-duration="1800">
+            <blog></blog>
+        </div>
+        <div class="col-12 col-lg-4" data-aos="flip-right" data-aos-duration="1800">
+            <blog></blog>
+        </div>
+        <div class="col-12 col-lg-4" data-aos="flip-right" data-aos-duration="1800">
+            <blog></blog>
+        </div> -->
+        <div class="col-12">
+            <swiper-container :init="blogsSwiper" id="blogsSwiper">
+                <div class="swiper-slide" v-for="b in store.profile.blogs" :key="b">
+                    <blog :blog="b"></blog>
+                    <!-- <pot data="b"></pot> -->
+                </div>
+            </swiper-container>
+        </div>
+    </div>
+    
+</section>

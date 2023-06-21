@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Incugamecon</title>
+
+    <meta name="title" content="A World in Decline and a Nation on the Rise">
+    <meta name="description" content="The Contradiction of Our Time is a thought-provoking look at how our world is in decline, while our nation is on the rise. This book explores the reasons behind this paradox and offers insightful solutions for navigating these conflicting forces. Discover compelling insights that help readers understand the current state of the world and its implications for the future.">
+    <meta name="keywords" content="A World in Decline and a Nation on the Rise">
+    <meta name="robots" content="index, follow">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="revisit-after" content="1 days">
+    <meta name="author" content="Fadi ElJurdi">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://incugamecon.media/blogs/a-world-in-decline-and-a-nation-on-the-rise.html">
+    <meta property="og:title" content="A World in Decline and a Nation on the Rise">
+    <meta property="og:description" content="The Contradiction of Our Time is a thought-provoking look at how our world is in decline, while our nation is on the rise. This book explores the reasons behind this paradox and offers insightful solutions for navigating these conflicting forces. Discover compelling insights that help readers understand the current state of the world and its implications for the future.">
+    <meta property="og:image" content="https://drive.google.com/uc?id=1ertbp8tz0Q0-Mw0Te-uNfxUWSgHVSyMf&export=view">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://incugamecon.media/blogs/a-world-in-decline-and-a-nation-on-the-rise.html">
+    <meta property="twitter:title" content="A World in Decline and a Nation on the Rise">
+    <meta property="twitter:description" content="The Contradiction of Our Time is a thought-provoking look at how our world is in decline, while our nation is on the rise. This book explores the reasons behind this paradox and offers insightful solutions for navigating these conflicting forces. Discover compelling insights that help readers understand the current state of the world and its implications for the future.">
+    <meta property="twitter:image" content="https://drive.google.com/uc?id=1ertbp8tz0Q0-Mw0Te-uNfxUWSgHVSyMf&export=view">
+    <link rel="shortcut icon" href="https://drive.google.com/uc?id=1ertbp8tz0Q0-Mw0Te-uNfxUWSgHVSyMf&export=view" type="image/x-icon">
+
+    <link rel="stylesheet" href="../css/app.css">
+    <link rel="stylesheet" href="../css/responsive.css">
+    <link rel="stylesheet" href="../css/animations.css">
+    <link rel="stylesheet" href="../bootstrap/bootstrap.min.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+    
+    <script src="../js/day.min.js"></script>
+    <script src="../js/relativetime.min.js"></script>
+    <script src="../js/vue.global.js"></script>
+
+
+</head>
+
+<body id="app">
+    
+    <section v-if="spinner" class="w-100 h-100 position-fixed top-0 start-0 z-3 bg-glass d-flex justify-content-center align-items-center">
+        <span class="spinner-grow spinner-grow-sm"></span>
+    </section>
+    <pagination>A World in Decline and a Nation on the Rise</pagination>
+    <main style="min-height: 500px;" class="my-4">
+        <section class="container">
+            <div class="row g-4">
+                <div class="col-12 col-lg-8">
+                    <article class="shadow-sm bg-dark p-3 rounded">
+                        <blog-media :media='[{"type":"image","alt":"JURDI-Image-20230620134850","src":"https://drive.google.com/uc?id=1ertbp8tz0Q0-Mw0Te-uNfxUWSgHVSyMf&export=view"}]'></blog-media>
+                        <section v-show="!translated" id="original">
+                            <h1>A World in Decline and a Nation on the Rise</h1>
+                            <p>In the realm of a nation torn by global decline and seething hostility, a handful of courageous people embark on a perilous journey to reclaim their true identity. As the world crumbles around them, they unearth an ancient source of magic, a forgotten language resonating with untamed power. With every incantation and spell, they forge a path towards self-discovery and inner strength. Battles rattle the land, as the nation's struggle to rise above oppression mirrors the battle within each individual's heart. Through their unwavering spirit and the weaving of enchantments, they redefine their destiny, transcending the chaos and emerging as the beacon of resilience, inspiring the world to rekindle hope amidst the gathering darkness.</p>
+                        </section>
+                        <section v-show="translated" id="translated"></section>
+                        <hr class="text-neon">
+                        <div class="d-flex justify-content-between align-items-center">
+                            <div class="d-flex align-items-center fs-small pop text-light">
+                                <time class="text-warning">{{utilities.timo('Tue Jun 20 2023 13:50:11 GMT-0400 (Eastern Daylight Time)')}}</time>
+                                <i class="bi bi-dot"></i>
+                                <span v-show="!translated" class="point text-decoration-underline text-secondary"
+                                    @click="translate">see translation</span>
+                                <span v-show="translated" class="point text-decoration-underline text-secondary"
+                                    @click="translated = !translated">see original</span>
+                            </div>
+                            <div class="d-flex align-items-center gap-3 point">
+                                <i title="share this page" @click="utilities.shareBlog(`A World in Decline and a Nation on the Rise`,`https://incugamecon.media/blogs/a-world-in-decline-and-a-nation-on-the-rise.html`)" class="bi bi-share-fill text-warning"></i>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+                <div class="col-12 col-lg-4">
+                    <check-also :blogs="profile.blogs"></check-also>
+                </div>
+            </div>
+        </section>
+    </main>
+    <div class="py-5"></div>
+    <footer class="w-100 pb-4 bg-aswad">
+        <contact-section></contact-section>
+    </footer>
+
+    <!-- <div class="stars"></div> -->
+
+    <script src="../bootstrap/bootstrap.bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <script src="../js/app.js" type="module"></script>
+</body>
+
+</html>

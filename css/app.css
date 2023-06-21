@@ -1,0 +1,302 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Bungee&family=Almarai&family=Poppins&display=swap');
+
+:root {
+    --neon-purple: #FC00FF;
+}
+
+.bg-aswad{
+    /* background-image: linear-gradient(to right, #434343 0%, black 100%); */
+    background-color: rgba(0, 0, 0, 0.807);
+    
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+
+}
+body {
+    overflow-x: hidden !important;
+    /* background-color: #231942 !important; */
+    /* background-image: linear-gradient(to top, #e6e9f0 0%, #eef1f5 100%); */
+    /* background-image: linear-gradient(60deg, #29323c 0%, #485563 100%); */
+
+    /* background: #16222A;  
+    background: -webkit-linear-gradient(to right, #3A6073, #16222A);  
+    background: linear-gradient(to right, #3A6073, #16222A);  */
+
+    /* background: #536976;  
+    background: -webkit-linear-gradient(to right, #292E49, #536976);  
+    background: linear-gradient(to right, #292E49, #536976);  */
+
+    /* background: #0F2027;  
+    background: -webkit-linear-gradient(to right, #2C5364, #203A43, #0F2027); 
+    background: linear-gradient(to right, #2C5364, #203A43, #0F2027); */
+
+    background: #070616 !important;
+    /* background: -webkit-linear-gradient(to right, #24243e, #302b63, #0f0c29);
+    background: linear-gradient(to right, #24243e, #302b63, #0f0c29); */
+
+}
+
+#translated > h1{
+    color: var(--bs-info);
+}
+#translated > p{
+    color: var(--bs-light) ;
+    line-height: 2;
+}
+
+#original > h1{
+    
+    font-family: 'Bungee', cursive;
+    color: var(--bs-info);
+}
+#original > p{
+    color: var(--bs-light);
+    line-height: 2;
+}
+
+.bungee{
+    font-family: 'Bungee', cursive;
+}
+
+footer {
+
+    position: relative;
+    z-index: 2;
+    /* background-image: linear-gradient(60deg, #29323c 0%, #485563 100%); */
+
+    /* background: #16222A;  
+    background: -webkit-linear-gradient(to right, #3A6073, #16222A);  
+    background: linear-gradient(to right, #3A6073, #16222A);  */
+
+    /* background: #536976;  
+    background: -webkit-linear-gradient(to right, #292E49, #536976);  
+    background: linear-gradient(to right, #292E49, #536976);  */
+
+    /* background: #0F2027;  
+    background: -webkit-linear-gradient(to right, #2C5364, #203A43, #0F2027); 
+    background: linear-gradient(to right, #2C5364, #203A43, #0F2027); */
+}
+
+.text-neon {
+    color: white;
+    /* Set your desired neon color */
+    /* text-shadow: 0 0 5px var(--bs-info), 0 0 10px var(--bs-info), 0 0 15px var(--bs-info), 0 0 20px var(--bs-info); */
+    /* Apply the neon effect */
+    filter:
+        drop-shadow(0 0 10px var(--bs-info)) 
+}
+
+.bg-neon{
+
+
+    filter:
+        drop-shadow(0 0 5px var(--bs-info)) drop-shadow(0 0 20px var(--bs-info))
+}
+.neon-lg {
+    filter:
+        drop-shadow(0 0 5px var(--bs-info)) drop-shadow(0 0 200px var(--bs-info))
+}
+
+.neon-hover:hover {
+
+    filter:
+        drop-shadow(0 0 5px var(--bs-light)) drop-shadow(0 0 20px var(--bs-info))
+}
+
+.text-justify {
+    text-align: justify;
+}
+
+.text-neon-p {
+    color: var(--neon-purple);
+}
+
+.bg-gradient {
+    background-color: #00DBDE;
+    background-image: linear-gradient(130deg, #00DBDE 0%, #FC00FF 100%);
+
+}
+
+.no-decoration {
+    text-decoration: none !important;
+    color: inherit;
+}
+
+.bebas {
+    font-family: 'Bebas Neue', sans-serif;
+}
+.arb{
+    font-family: 'Almarai', sans-serif;
+}
+nav>a {
+    /* padding: .2rem .5rem;
+    border-radius: .2rem;
+    transition: .3; */
+    color: inherit;
+    text-decoration: none;
+}
+
+nav>a:hover {
+    /* background-color: #E6B325;
+    color: black !important; */
+}
+
+.pop {
+    font-family: 'Poppins', sans-serif;
+}
+
+.point {
+    cursor: pointer;
+}
+
+.bg-map {
+    background-image: url('../img/map4.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+
+}
+
+.bg-glass {
+    /* From https://css.glass */
+    background: rgba(0, 0, 0, 0.2);
+    /* background: #3a6073; */
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+}
+
+.bg-transparent {
+    background: transparent !important;
+}
+
+.hero {
+    width: 100%;
+    height: 100vh;
+}
+
+
+
+/* width */
+::-webkit-scrollbar {
+    width: 5px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: var(--bs-dark);
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: var(--bs-secondary);
+}
+
+.text-shadow {
+    -webkit-text-stroke: .7px black;
+    /* text-stroke: 1px black; */
+}
+
+.img-brightness {
+    filter: brightness(0.7);
+}
+
+.ls-2 {
+    letter-spacing: 2px;
+}
+
+.ratio-9x16 {
+    width: 100%;
+    aspect-ratio: 9/16;
+}
+
+.ratio-3x4 {
+    width: 100%;
+    aspect-ratio: 3/4;
+}
+
+.pot-info {
+    position: absolute;
+    bottom: 0;
+
+}
+
+
+.text-fade {
+    display: -webkit-box;
+    overflow: hidden;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 1;
+    position: relative;
+}
+
+.text-fade-2 {
+    display: -webkit-box;
+    overflow: hidden;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    position: relative;
+}
+
+.text-fade-3 {
+    display: -webkit-box;
+    overflow: hidden;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 3;
+    position: relative;
+}
+
+.text-fade-5 {
+    display: -webkit-box;
+    overflow: hidden;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 5;
+    position: relative;
+}
+.text-warning-hover-links>a:hover {
+    color: white !important;
+    filter: drop-shadow(0 0 5px var(--bs-info)) drop-shadow(0 0 25px var(--bs-info))
+}
+
+.text-warning-hover-links>span:hover {
+    
+    color: white !important;
+    filter: drop-shadow(0 0 5px var(--bs-info)) drop-shadow(0 0 25px var(--bs-info))
+}
+
+
+.fs-small {
+    font-size: small;
+}
+
+.fs-smaller {
+    font-size: smaller;
+}
+
+.fs-xsmall {
+    font-size: x-small;
+}
+
+.fs-xxsmall {
+    font-size: xx-small;
+}
+
+
+.img-zoom:hover {
+    transform: scale(1.2);
+}
+
+.img-zoom {
+    transition: .3s ease-in-out !important;
+}
+
+/* .class="swiper-pagination-bullet swiper-pagination-bullet-active" */
+
+.swiper-pagination-bullet{
+    background-color: var(--bs-info) !important;
+}

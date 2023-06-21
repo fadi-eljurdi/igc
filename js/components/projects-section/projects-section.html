@@ -1,0 +1,11 @@
+<section class="container" id="projects">
+    <div class="row g-4">
+        <div class="col-12">
+            <title-section title="Pipline Projects">Fueling Innovation: Ignite Your Media and Gaming Future with Our Dynamic Project Pipeline</title-section>
+        </div>
+        <div class="col-12 col-lg-4" v-for="p in store.profile.projects" :key="p">
+            <!-- <pot data-aos="flip-right" data-aos-duration="1000" :data="p"></pot> -->
+            <pot :data="p"></pot>
+        </div>
+    </div>
+</section>

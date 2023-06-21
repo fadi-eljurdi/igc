@@ -1,0 +1,37 @@
+<section class="hero-aside container" id="about" style="margin-top: 170px;">
+    <div class="row justify-content-between">
+        <div class="col-12 col-lg-6">
+            <h2 data-aos-duration="1500" class="display-6 bungee text-light text-centerr text-neon" data-aos="zoom-in-up">{{store.profile.contact.heading}}</h2>
+            <p data-aos-duration="1000" data-aos="zoom-in" class="text-light pop p-2 bg-glass rounded text-justify">{{store.profile.contact.bio}}</p>
+        </div>
+        <div class="col-12 col-lg-5">
+            <div class="ratio ratio-16x9 not-animated">
+                <iframe class="skeleton img-fluid object-fit-cover bg-neon rounded" :src="'https://www.youtube-nocookie.com/embed/'+getYoutubeId+'?rel=0'" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- <section style="height: 100vh;" class="position-relative" id="about">
+    <aside class="hero-aside container position-absolute z-1 top-50 start-50 translate-middle">
+        <div class="row justify-content-between">
+            <div class="col-12 col-lg-6">
+                <h2 data-aos-duration="1500" class="display-6 bungee text-light text-centerr text-neon" data-aos="zoom-in-up">{{store.profile.contact.heading}}</h2>
+                <p data-aos-duration="1000" data-aos="zoom-in" class="text-light pop p-2 bg-glass rounded text-justify">{{store.profile.contact.bio}}</p>
+            </div>
+            <div class="col-12 col-lg-5">
+                <div class="ratio ratio-16x9 not-animated">
+                    <iframe class="skeleton img-fluid object-fit-cover bg-neon rounded" :src="'https://www.youtube-nocookie.com/embed/'+getYoutubeId+'?rel=0'" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                </div>
+            </div>
+        </div>
+    </aside>
+</section> -->
+
+<!-- <swiper-container class="h-100" id="hero-swiper" :init="swiperInit">
+    <div class="swiper-slide" v-for="s in slides" :key="s">
+        <div class="h-100 ratio ratio-16x9">
+            <img :src="s" alt="hero-slide" class="skeleton img-brightness img-fluid object-fit-cover">
+        </div>
+    </div>
+</swiper-container> -->
