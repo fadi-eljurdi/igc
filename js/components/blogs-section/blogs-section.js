@@ -7,10 +7,10 @@ export default {
             blogsSwiper:{
                 
                 slidesPerView: 1,
-                autoplay: {
-                    delay: 2500,
-                    disableOnInteraction: false,
-                },
+                // autoplay: {
+                //     delay: 2500,
+                //     disableOnInteraction: false,
+                // },
                 // loop:true,
                 pagination:{
                     el:'.swiper-pagination',

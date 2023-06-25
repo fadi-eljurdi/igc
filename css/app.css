@@ -82,25 +82,29 @@ footer {
     /* Set your desired neon color */
     /* text-shadow: 0 0 5px var(--bs-info), 0 0 10px var(--bs-info), 0 0 15px var(--bs-info), 0 0 20px var(--bs-info); */
     /* Apply the neon effect */
-    filter:
-        drop-shadow(0 0 10px var(--bs-info)) 
+    /* filter:
+        drop-shadow(0 0 10px var(--bs-info))  */
+        filter:
+        drop-shadow(0 0 10px var(--bs-danger)) 
 }
 
 .bg-neon{
 
 
-    filter:
-        drop-shadow(0 0 5px var(--bs-info)) drop-shadow(0 0 20px var(--bs-info))
+    /* filter:
+        drop-shadow(0 0 5px var(--bs-info)) drop-shadow(0 0 20px var(--bs-info)) */
+
+    filter: drop-shadow(0 0 5px var(--bs-danger)) drop-shadow(0 0 20px var(--bs-danger))
 }
 .neon-lg {
-    filter:
-        drop-shadow(0 0 5px var(--bs-info)) drop-shadow(0 0 200px var(--bs-info))
+    /* filter: drop-shadow(0 0 5px var(--bs-info)) drop-shadow(0 0 200px var(--bs-info)) */
+    filter: drop-shadow(0 0 5px var(--bs-danger)) drop-shadow(0 0 200px var(--bs-danger))
 }
 
 .neon-hover:hover {
 
-    filter:
-        drop-shadow(0 0 5px var(--bs-light)) drop-shadow(0 0 20px var(--bs-info))
+    /* filter: drop-shadow(0 0 5px var(--bs-light)) drop-shadow(0 0 20px var(--bs-info)) */
+    filter: drop-shadow(0 0 5px var(--bs-light)) drop-shadow(0 0 20px var(--bs-danger))
 }
 
 .text-justify {
