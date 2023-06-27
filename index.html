@@ -63,6 +63,23 @@
     <contact-section></contact-section>
   </footer>
   <div class="stars"></div>
+  
+  <aside v-if="store.form.showForm" class="bg-glass w-100 h-100 position-fixed top-0 start-0 z-2 d-flex justify-content-center align-items-center">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-12 col-lg-8 bg-light p-3 rounded d-flex flex-column gap-2">
+                <h6>Send us a message</h6>
+                <input v-model="store.form.name" type="text" class="form-control" placeholder="Enter name">
+                <input v-model="store.form.subject" type="text" class="form-control" placeholder="Enter Subject">
+                <textarea v-model="store.form.message" cols="30" rows="10" class="form-control" placeholder="Write a message.."></textarea>
+                <div class="d-flex gap-2">
+                  <a :href="link" class="btn btn-sm btn-primary px-3">Send</a>
+                  <button class="btn btn-sm btn-outline-secondary px-3" @click="store.form.showForm = !store.form.showForm">Cancel</button>
+                </div>
+            </div>
+        </div>
+    </div>
+  </aside>
 
   <script src="./bootstrap/bootstrap.bundle.min.js"></script>
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>

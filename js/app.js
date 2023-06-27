@@ -162,6 +162,11 @@ const app = Vue.createApp({
             }
         }
         
+    },
+    computed:{
+        link(){
+            return `mailto:${this.store.profile.contact.email}?subject=${encodeURIComponent(this.store.form.subject)}&body=${encodeURIComponent('Name: '+this.store.form.name+'\n\n'+this.store.form.message)}`
+        }
     }
 })
 
@@ -208,6 +213,9 @@ app.component('member', member)
 import teamSection from './components/team-section/team-section.js'
 app.component('team-section', teamSection)
 
+
+import emailForm from './components/email-form/email-form.js'
+app.component('email-form', emailForm)
 
 import contact from './components/contact/contact.js'
 app.component('contact-section', contact)

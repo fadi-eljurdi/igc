@@ -57,5 +57,11 @@ export default {
                 "url": ""
             },
         ]
+    },
+    form:{
+        name:'',
+        subject:'',
+        message:'',
+        showForm:false
     }
 }

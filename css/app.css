@@ -21,8 +21,8 @@ body {
     /* background: #16222A;  
     background: -webkit-linear-gradient(to right, #3A6073, #16222A);  
     background: linear-gradient(to right, #3A6073, #16222A);  */
-
-    /* background: #536976;  
+/* 
+    background: #536976;  
     background: -webkit-linear-gradient(to right, #292E49, #536976);  
     background: linear-gradient(to right, #292E49, #536976);  */
 
@@ -30,7 +30,8 @@ body {
     background: -webkit-linear-gradient(to right, #2C5364, #203A43, #0F2027); 
     background: linear-gradient(to right, #2C5364, #203A43, #0F2027); */
 
-    background: #070616 !important;
+    /* background: #070616 !important; */
+    background-color: #020f21 !important;
     /* background: -webkit-linear-gradient(to right, #24243e, #302b63, #0f0c29);
     background: linear-gradient(to right, #24243e, #302b63, #0f0c29); */
 

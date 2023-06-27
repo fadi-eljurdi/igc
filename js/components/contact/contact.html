@@ -5,10 +5,11 @@
                 <h2 class="fs-4 text-light opacity-75 m-0">Incugamecon</h2>
                 <p class="fs-smaller text-light opacity-50">We specialise in providing media consultancy and intellectual property incubation services to gaming, film, TV companies and entrepreneurs.</p>
                 <div class="d-flex flex-column gap-2 text-warning-hover-links">
-                    <a href="mailto:info@incugamecon.media" class="text-secondary link-light link-underline-opacity-0 d-flex gap-3 align-items-center">
+                    <span class="text-secondary link-light link-underline-opacity-0 d-flex gap-3 align-items-center point">
                         <i class="fs-5 bi bi-envelope "></i>
-                        <span>info@incugamecon.media</span>
-                    </a>
+                        <!-- <email-form :email="store.profile.contact.email"></email-form> -->
+                        <span @click="store.form.showForm = !store.form.showForm">{{store.profile.contact.email}}</span>
+                    </span>
                     <a href="https://wa.me/+17167309932" class="text-secondary link-light link-underline-opacity-0 d-flex gap-3 align-items-center">
                         <i class="fs-5 bi bi-whatsapp "></i>
                         <span>Whatsapp</span>
