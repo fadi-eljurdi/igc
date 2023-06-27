@@ -63,6 +63,9 @@
       <!-- <li><a class="dropdown-item" href="#">Cookies Policies</a></li> -->
       <li><a class="dropdown-item" :href="utilities.env('/acceptable-use.html')">Acceptable use</a></li>
       
-      <li><a href="https://wa.me/+17167309932" class="dropdown-item btn btn-sm btn-info">Contact</a></li>
+      <li><a href="https://wa.me/+17167309932" class="dropdown-item">Whatsapp</a></li>
+      <li>
+        <span @click="store.form.showForm = !store.form.showForm" class="dropdown-item">{{store.profile.contact.email}}</span></span>
+      </li>
     </ul>
 </header>
