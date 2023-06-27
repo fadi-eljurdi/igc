@@ -24,7 +24,23 @@
         <!-- <li><a class="dropdown-item" href="#">Cookies Policies</a></li> -->
         <li><a class="dropdown-item" :href="utilities.env('/acceptable-use.html')">Acceptable use</a></li>
       </ul>
-      <a href="https://wa.me/+17167309932" class="btn btn-sm btn-info">Contact</a>
+      <a href="https://wa.me/+17167309932" class="btn btn-sm btn-info"  data-bs-toggle="dropdown">Contact</a>
+      <ul class="dropdown-menu">
+        <li class="dropdown-item">
+          <span class="text-secondary link-light link-underline-opacity-0 d-flex gap-3 align-items-center point">
+          <i class="fs-5 bi bi-envelope "></i>
+          <!-- <email-form :email="store.profile.contact.email"></email-form> -->
+          <span @click="store.form.showForm = !store.form.showForm">{{store.profile.contact.email}}</span>
+          </span>
+        </li>
+        
+        <li class="dropdown-item">
+          <a href="https://wa.me/+17167309932" class="text-secondary link-light link-underline-opacity-0 d-flex gap-3 align-items-center">
+            <i class="fs-5 bi bi-whatsapp "></i>
+            <span>Whatsapp</span>
+          </a>
+        </li>
+      </ul>
     </nav>
     <!-- <i class=" bi bi-three-dots-vertical text-neon fs-3" data-bs-toggle="dropdown"></i>
     <ul class="dropdown-menu">
