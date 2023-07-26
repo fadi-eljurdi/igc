@@ -2,6 +2,7 @@
 
 :root {
     --neon-purple: #FC00FF;
+    --dark-blue:#003566;
 }
 
 .bg-aswad{
@@ -42,11 +43,11 @@ body {
 }
 
 .text-dark-blue{
-    color: #003566 !important;
+    color: var(--dark-blue) !important;
 }
 
 #translated > h1{
-    color: var(--bs-primary);
+    color: var(--dark-blue);
 }
 #translated > p{
     color: var(--bs-secondary) ;
@@ -56,7 +57,7 @@ body {
 #original > h1{
     
     font-family: 'Bungee', cursive;
-    color: var(--bs-primary);
+    color: var(--dark-blue);
 }
 #original > p{
     color: var(--bs-secondary);
