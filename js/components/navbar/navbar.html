@@ -1,8 +1,8 @@
-<header class="w-100 text-light p-3 position-fixed z-2 top-0 start-0 d-flex justify-content-between align-items-center">
+<header class="w-100 bg-light shadow p-3 position-fixed z-2 top-0 start-0 d-flex justify-content-between align-items-center">
     <section>
       <a class="no-decoration" :href="utilities.env('/')" >
         <div class="d-flex gap-1 align-items-center">
-          <img src="https://drive.google.com/uc?id=13jO0AglHi7Nb6OkX2n8ILNVho4R9JMm3" alt="logo" class="img-fluid" width="50">
+          <img :src="store.profile.contact.logo" alt="logo" class="img-fluid img-scale" width="50" >
           <h1 class="fs-3 ls-2 bebas text-shadoww m-0 text-center text-md-start">IncuGameCon</h1>
         </div>
       </a>
@@ -11,12 +11,12 @@
     <nav class="d-none d-md-flex gap-3 align-items-center pop text-uppercase fs-6"> 
       <!-- <a href="#"><i class="bi bi-whatsapp"></i></a> -->
       <!-- <a href="#">Home</a> -->
-      <!-- <a href="#about">About</a> -->
+      <a href="#about">About</a>
       <a :href="utilities.env('/services.html')">Services</a>
       <a :href="utilities.env('/projects.html')">Projects</a>
       <!-- <a :href="utilities.env('/team.html')">Team</a> -->
       <a :href="utilities.env('/blogs')">Blogs</a>
-      <span data-bs-toggle="dropdown" class="point">Terms and Policies</span>
+      <!-- <span data-bs-toggle="dropdown" class="point">Terms and Policies</span> -->
       <ul class="dropdown-menu">
         <li><a class="dropdown-item" :href="utilities.env('/terms.html')">Terms of use</a></li>
         <li><a class="dropdown-item" :href="utilities.env('/disclaimer.html')">Disclaimer</a></li>
@@ -24,7 +24,7 @@
         <!-- <li><a class="dropdown-item" href="#">Cookies Policies</a></li> -->
         <li><a class="dropdown-item" :href="utilities.env('/acceptable-use.html')">Acceptable use</a></li>
       </ul>
-      <a href="https://wa.me/+17167309932" class="btn btn-sm btn-info"  data-bs-toggle="dropdown">Contact</a>
+      <a href="https://wa.me/+17167309932" class="btn btn-sm btn-primary"  data-bs-toggle="dropdown">Contact</a>
       <ul class="dropdown-menu">
         <li class="dropdown-item">
           <span class="text-secondary link-light link-underline-opacity-0 d-flex gap-3 align-items-center point">
@@ -49,13 +49,13 @@
       <li><a href="#projects" class="dropdown-item">Projects</a></li>
       <li><a href="https://wa.me/+17167309932" class="dropdown-item btn btn-sm btn-info">Contact</a></li>
     </ul> -->
-    <div class="d-flex d-md-none gap-2 align-items-center">
-      <i class=" bi bi-telephone-outbound text-neon fs-4" type="button" data-bs-toggle="dropdown" aria-expanded="false"></i>
+    <div id="icon-bar" class="text-light d-flex d-md-none gap-2 align-items-center">
+      <i class="bi bi-telephone-outbound fs-4" type="button" data-bs-toggle="dropdown" aria-expanded="false"></i>
       <ul class="dropdown-menu">
         <li><a href="https://wa.me/+17167309932" class="dropdown-item">Whatsapp</a></li>
         <li><span @click="store.form.showForm = !store.form.showForm" class="dropdown-item">Email</span></span></li>
       </ul>
-      <i class="d-block d-md-none bi bi-three-dots-vertical text-neon fs-3" type="button" data-bs-toggle="dropdown" aria-expanded="false"></i>
+      <i class="d-block d-md-none bi bi-three-dots-vertical fs-3" type="button" data-bs-toggle="dropdown" aria-expanded="false"></i>
       <ul class="dropdown-menu">
         <!-- <li><a href="#about" class="dropdown-item">About</a></li> -->
         <li><a :href="utilities.env('/services.html')" class="dropdown-item">Services</a></li>

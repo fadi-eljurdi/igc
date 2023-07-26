@@ -1,32 +1,26 @@
-<section class="container py-5" id="services">
+<section class="container" id="services">
     <div class="row justify-content-start g-3">
         <div class="col-12">
-            <title-section :title="store.profile.contact.sHeading">{{store.profile.contact.sTagline}}</title-section>
+            <title-section :title="store.profile.contact.sHeading">
+                <!-- {{store.profile.contact.sTagline}} -->
+            </title-section>
         </div>
-        <!-- <div class="col-12 col-lg-4  position-relative z-1" data-aos="flip-right" data-aos-duration="1000" v-for="s in store.profile.services" :key="s">
+        <div class="col-12 col-lg-4  position-relative z-1" data-aos="flip-right" data-aos-duration="1000" v-for="s in store.profile.services" :key="s">
             <a :href="s.url" class="no-decoration" :title="s.title">
-                <div class="p-3 pop d-flex flex-column gap-2 bg-dark rounded neon-hover">
+                <div class="p-3 pop d-flex flex-column gap-2 bg-light shadow-sm rounded">
                     <div class="ratio ratio-16x9">
-                        <img :src="s.thumbnail" alt="s1" class="skeleton img-fluid object-fit-cover rounded">
+                        <img :src="s.homeThumbnail" alt="s1" class="bg-light img-fluid object-fit-cover rounded">
                     </div>
-                    <h4 class="fs-4 text-info m-0 text-fade">{{s.title}}</h4>
-                    <p class="text-light fs-smaller text-fade-3">{{s.description}}</p>
-                    <a :href="s.url" class="btn btn-sm btn-outline-info">Learn more</a>
+                    <h4 class="fs-5 text-primary m-0 text-fade">{{s.title}}</h4>
+                    <p class="text-secondary fs-smaller text-fade-3">{{s.description}}</p>
+                    <!-- <a :href="s.url" class="btn btn-sm btn-outline-primary">Learn more</a> -->
+                    <a class="icon-link icon-link-hover" :href="s.url">
+                        Learn more
+                        <i class="bi bi-arrow-right"></i>
+                    </a>
                 </div>
             </a>
-        </div> -->
-        <div class="col-12 col-lg-4  position-relative z-1" v-for="s in store.profile.services" :key="s">
-            <a :href="s.url" class="no-decoration" :title="s.title">
-                <!-- <div class="p-3 pop d-flex flex-column gap-2 bg-dark rounded neon-hover">
-                    <div class="ratio ratio-16x9">
-                        <img :src="s.thumbnail" alt="s1" class="skeleton img-fluid object-fit-cover rounded">
-                    </div>
-                    <h4 class="fs-4 text-info m-0 text-fade">{{s.title}}</h4>
-                    <p class="text-light fs-smaller text-fade-3">{{s.description}}</p>
-                    <a :href="s.url" class="btn btn-sm btn-outline-info">Learn more</a>
-                </div> -->
-                <pot :data="s"></pot>
-            </a>
         </div>
+        
     </div>
 </section>

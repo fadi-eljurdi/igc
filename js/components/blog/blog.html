@@ -1,10 +1,12 @@
-<a :href="blog.url" class="no-decoration p-3 pop d-flex flex-column gap-2 bg-aswad shadow rounded">
+<a :href="blog.url" class="no-decoration p-3 pop d-flex flex-column gap-2 bg-light shadow-sm rounded">
     <div class="ratio ratio-16x9">
         <img :src="blog.thumbnail" :alt="blog.title" class="img-fluid object-fit-cover rounded">
     </div>
-    <h4 style="min-height: 45px;" class="fs-4 text-info fw-bold m-0 text-fade-2">{{blog.title}}</h4>
+    <h4 style="min-height: 60px;" class="fs-4 text-primary fw-bold m-0 text-fade-2">{{blog.title}}</h4>
     <div class="">
-        <!-- <p class="text-light fs-smaller text-fade-3 m-0">{{blog.description}}</p> -->
-        <time class="fs-xsmall text-warning font-monospace">{{utilities.timo(blog.date)}}</time>
+        <!-- <time class="fs-smaller text-success font-monospace">{{utilities.timo(blog.date)}}</time> -->
+
+        <p style="min-height: 60px;" class="text-secondary fs-smaller text-fade-3 m-0">{{blog.description}}</p>
+        <time class="fs-smaller text-dark font-monospace">{{utilities.timo(blog.date)}}</time>
     </div>
 </a>

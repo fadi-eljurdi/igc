@@ -43,7 +43,8 @@ export default {
                 "title": "",
                 "description": "",
                 "thumbnail": "",
-                "url": ""
+                "url": "",
+                "homeThumbnail":""
             },
         ],
         "projects": [

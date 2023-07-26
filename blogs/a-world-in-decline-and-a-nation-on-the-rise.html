@@ -57,7 +57,7 @@
         <section class="container">
             <div class="row g-4">
                 <div class="col-12 col-lg-8">
-                    <article class="shadow-sm bg-dark p-3 rounded">
+                    <article class="shadow-sm bg-light p-3 rounded">
                         <blog-media :media='[{"type":"image","alt":"JURDI-Image-20230620134850","src":"https://drive.google.com/uc?id=1ertbp8tz0Q0-Mw0Te-uNfxUWSgHVSyMf&export=view"}]'></blog-media>
                         <section v-show="!translated" id="original">
                             <h1>A World in Decline and a Nation on the Rise</h1>
@@ -67,7 +67,7 @@
                         <hr class="text-neon">
                         <div class="d-flex justify-content-between align-items-center">
                             <div class="d-flex align-items-center fs-small pop text-light">
-                                <time class="text-warning">{{utilities.timo('Tue Jun 20 2023 13:50:11 GMT-0400 (Eastern Daylight Time)')}}</time>
+                                <time class="text-primary">{{utilities.timo('Tue Jun 20 2023 13:50:11 GMT-0400 (Eastern Daylight Time)')}}</time>
                                 <i class="bi bi-dot"></i>
                                 <span v-show="!translated" class="point text-decoration-underline text-secondary"
                                     @click="translate">see translation</span>
@@ -75,7 +75,7 @@
                                     @click="translated = !translated">see original</span>
                             </div>
                             <div class="d-flex align-items-center gap-3 point">
-                                <i title="share this page" @click="utilities.shareBlog(`A World in Decline and a Nation on the Rise`,`https://incugamecon.media/blogs/a-world-in-decline-and-a-nation-on-the-rise.html`)" class="bi bi-share-fill text-warning"></i>
+                                <i title="share this page" @click="utilities.shareBlog(`A World in Decline and a Nation on the Rise`,`https://incugamecon.media/blogs/a-world-in-decline-and-a-nation-on-the-rise.html`)" class="bi bi-share-fill text-primary"></i>
                             </div>
                         </div>
                     </article>

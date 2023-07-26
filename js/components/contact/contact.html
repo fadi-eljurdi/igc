@@ -15,7 +15,7 @@
                         <span>Whatsapp</span>
                     </a>
                     
-                    <span  data-bs-toggle="dropdown" class="point text-secondary link-light link-underline-opacity-0 d-flex gap-3 align-items-center">
+                    <!-- <span  data-bs-toggle="dropdown" class="point text-secondary link-light link-underline-opacity-0 d-flex gap-3 align-items-center">
                         <i class="fs-5 bi bi-shield-fill-check "></i>
                         <span>Terms & Policies</span>
                     </span>
@@ -23,9 +23,30 @@
                         <li><a class="dropdown-item" :href="utilities.env('/terms.html')">Terms of use</a></li>
                         <li><a class="dropdown-item" :href="utilities.env('/disclaimer.html')">Disclaimer</a></li>
                         <li><a class="dropdown-item" :href="utilities.env('/privacy-policy.html')">Privacy policy</a></li>
-                        <!-- <li><a class="dropdown-item" href="#">Cookies Policies</a></li> -->
                         <li><a class="dropdown-item" :href="utilities.env('/acceptable-use.html')">Acceptable use</a></li>
-                      </ul>
+                    </ul> -->
+
+                    
+                    <a :href="utilities.env('/terms.html')" class="text-secondary link-light link-underline-opacity-0 d-flex gap-3 align-items-center">
+                        <i class="fs-5 bi bi-shield-check "></i>
+                        <span>Terms of use</span>
+                    </a>
+                    <a :href="utilities.env('/disclaimer.html')" class="text-secondary link-light link-underline-opacity-0 d-flex gap-3 align-items-center">
+                        <i class="fs-5 bi bi-shield-check "></i>
+                        <span>Disclaimer</span>
+                    </a>
+                    <a :href="utilities.env('/privacy-policy.html')" class="text-secondary link-light link-underline-opacity-0 d-flex gap-3 align-items-center">
+                        <i class="fs-5 bi bi-shield-check "></i>
+                        <span>Privacy policy</span>
+                    </a>
+                    <a :href="utilities.env('/acceptable-use.html')" class="text-secondary link-light link-underline-opacity-0 d-flex gap-3 align-items-center">
+                        <i class="fs-5 bi bi-shield-check "></i>
+                        <span>Acceptable use</span>
+                    </a>
+
+
+
+
                     <!-- <a href="https://www.linkedin.com/company/88963469/admin/" class="text-secondary link-light link-underline-opacity-0 d-flex gap-3 align-items-center">
                         <i class="fs-5 bi bi-linkedin text-secondary"></i>
                         <span>LinkedIn</span>
@@ -52,7 +73,7 @@
                         v-for="link in store.profile.services" :key="link"
                         :href="link.url" 
                         class="link-underline-opacity-0 link-underline text-secondary m-0 d-flex align-items-center gap-1">
-                        <span class="material-symbols-outlined fs-4">link</span>
+                        <!-- <span class="material-symbols-outlined fs-4">link</span> -->
                         <span class="text-fade">{{link.title}}</span>
                     </a>
                 </div>
@@ -68,7 +89,7 @@
                         v-for="l in store.profile.links" :key="l"
                         :href="l.url" 
                         class="link-underline-opacity-0 link-underline text-secondary m-0 d-flex align-items-center gap-1">
-                        <span class="material-symbols-outlined fs-4">link</span>
+                        <!-- <span class="material-symbols-outlined fs-4">link</span> -->
                         <span class="text-fade">{{l.text}}</span>
                     </a>
                 </div>

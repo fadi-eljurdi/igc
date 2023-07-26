@@ -57,7 +57,7 @@
         <section class="container">
             <div class="row g-4">
                 <div class="col-12 col-lg-8">
-                    <article class="shadow-sm bg-dark p-3 rounded">
+                    <article class="shadow-sm bg-light p-3 rounded">
                         <blog-media :media='[{"type":"image","alt":"JURDI-Image-20230619174738","src":"https://drive.google.com/uc?id=1XIZf5J8HGRUy0hi06n_-rdZWsUlrSc4d&export=view"}]'></blog-media>
                         <section v-show="!translated" id="original">
                             <h1>Retail Rivals: Cosmic Broil Battle</h1>
@@ -67,7 +67,7 @@
                         <hr class="text-neon">
                         <div class="d-flex justify-content-between align-items-center">
                             <div class="d-flex align-items-center fs-small pop text-light">
-                                <time class="text-warning">{{utilities.timo('Mon Jun 19 2023 17:48:08 GMT-0400 (Eastern Daylight Time)')}}</time>
+                                <time class="text-primary">{{utilities.timo('Mon Jun 19 2023 17:48:08 GMT-0400 (Eastern Daylight Time)')}}</time>
                                 <i class="bi bi-dot"></i>
                                 <span v-show="!translated" class="point text-decoration-underline text-secondary"
                                     @click="translate">see translation</span>
@@ -75,7 +75,7 @@
                                     @click="translated = !translated">see original</span>
                             </div>
                             <div class="d-flex align-items-center gap-3 point">
-                                <i title="share this page" @click="utilities.shareBlog(`Retail Rivals: Cosmic Broil Battle`,`https://incugamecon.media/blogs/retail-rivals-cosmic-broil-battle.html`)" class="bi bi-share-fill text-warning"></i>
+                                <i title="share this page" @click="utilities.shareBlog(`Retail Rivals: Cosmic Broil Battle`,`https://incugamecon.media/blogs/retail-rivals-cosmic-broil-battle.html`)" class="bi bi-share-fill text-primary"></i>
                             </div>
                         </div>
                     </article>

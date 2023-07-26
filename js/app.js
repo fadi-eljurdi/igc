@@ -138,6 +138,20 @@ const app = Vue.createApp({
                 this.spinner = false
                 this.profile = res
                 this.store.profile = res
+                store.profile.services.forEach(s => {
+                    if( s.index == '1'){
+                        s.homeThumbnail = 'https://drive.google.com/uc?id=13u85aFqeV7uhB7mHcajU32HZHKeM-1Tc'
+                        console.log(s);
+                    }
+                    if( s.index == '2'){
+                        s.homeThumbnail = 'https://drive.google.com/uc?id=1kabiXH2dmutr3lX2rHEyY50dXeLLBQAt'
+                        console.log(s);
+                    }
+                    if( s.index == '3'){
+                        s.homeThumbnail = 'https://drive.google.com/uc?id=1FHzpEE9EeAC0qBpvsxji5LFjsc7V6FtC'
+                        console.log(s);
+                    }
+                })
             }).catch(err => {
                 console.log(err);
                 alert('Network issues please refresh the page')
@@ -179,6 +193,9 @@ app.component('title-section', title)
 
 import navbar from './components/navbar/navbar.js'
 app.component('navbar-section', navbar)
+
+import aboutSection from './components/about-section/about-section.js'
+app.component('about-section', aboutSection)
 
 import hero from './components/hero/hero.js'
 app.component('hero-section', hero)

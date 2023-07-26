@@ -8,6 +8,11 @@ export default {
             utilities,
             store
         }
+    },
+    mounted(){
+        
+
+        // console.log(store.profile.services);
     }
     
 }
