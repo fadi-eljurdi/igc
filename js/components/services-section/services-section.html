@@ -1,8 +1,8 @@
+<!--
 <section class="container" id="services">
     <div class="row justify-content-start g-3">
         <div class="col-12">
             <title-section :title="store.profile.contact.sHeading">
-                <!-- {{store.profile.contact.sTagline}} -->
             </title-section>
         </div>
         <div class="col-12 col-lg-4  position-relative z-1" data-aos="flip-right" data-aos-duration="1000" v-for="s in store.profile.services" :key="s">
@@ -13,7 +13,6 @@
                     </div>
                     <h4 class="fs-5 text-primary m-0 text-fade">{{s.title}}</h4>
                     <p class="text-secondary fs-smaller text-fade-3">{{s.description}}</p>
-                    <!-- <a :href="s.url" class="btn btn-sm btn-outline-primary">Learn more</a> -->
                     <a class="icon-link icon-link-hover" :href="s.url">
                         Learn more
                         <i class="bi bi-arrow-right"></i>
@@ -23,4 +22,34 @@
         </div>
         
     </div>
+</section> -->
+
+
+<section class="container" id="services">
+    <div class="row justify-content-start g-3">
+        <div class="col-12">
+            <title-section :title="store.profile.contact.sHeading">
+            </title-section>
+        </div>
+        <div class="col-12 col-lg-4  position-relative z-1" data-aos="flip-right" data-aos-duration="1000" v-for="s in store.profile.services" :key="s">
+            <a :href="s.url" class="no-decoration" :title="s.title">
+                <div class="p-3 pop d-flex flex-column gap-2 bg-light shadow-sm rounded">
+                    <div class="d-flex gap-3 align-items-center">
+                        <img :src="s.homeThumbnail" width="100" alt="s1" class="img-fluid border rounded-circle">
+                        <h4 class="fs-6 text-primary text-fade-3 m-0 d-flex justify-content-center align-items-center" style="min-height: 125px;">{{s.title}}</h4>
+                    </div>
+                    <p class="text-secondary fs-smaller text-fade-3 m-0">{{s.description}}</p>
+                    <a class="icon-link icon-link-hover opacity-50 fs-small" :href="s.url">
+                        Learn more
+                        <i class="bi bi-arrow-right"></i>
+                    </a>
+                </div>
+            </a>
+        </div>
+        
+    </div>
 </section>
+
+
+
+
