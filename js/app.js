@@ -60,6 +60,7 @@ const app = Vue.createApp({
 
         }
     },
+
     methods:{
         font(){
             if(document.querySelector('html').lang == 'ar'){
@@ -180,6 +181,9 @@ const app = Vue.createApp({
     computed:{
         link(){
             return `mailto:${this.store.profile.contact.email}?subject=${encodeURIComponent(this.store.form.subject)}&body=${encodeURIComponent('Name: '+this.store.form.name+'\n\n'+this.store.form.message)}`
+        },
+        reversedBlogs(){
+            return this.store.profile.blogs.reverse()
         }
     }
 })
