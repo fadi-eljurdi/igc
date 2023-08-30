@@ -32,8 +32,13 @@ export default {
                   },
                 }
             },
-            store
+            store,
         }
+    },
+    computed:{
+      reversedBlogs(){
+        return this.store.profile.blogs.reverse()
+      }
     }
     
 }
