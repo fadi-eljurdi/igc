@@ -13,13 +13,21 @@
         <div class="col-12 col-lg-4" data-aos="flip-right" data-aos-duration="1800">
             <blog></blog>
         </div> -->
-        <div class="col-12">
+        <!-- <div class="col-12">
             <swiper-container :init="blogsSwiper" id="blogsSwiper">
                 <div class="swiper-slide" v-for="b in reversedBlogs" :key="b">
                     <blog :blog="b"></blog>
-                    <!-- <pot data="b"></pot> -->
                 </div>
             </swiper-container>
+        </div> -->
+        <div class="col-12 col-lg-4" v-for="b in reversedBlogs" :key="b">
+            <blog :blog="b" data-aos="zoom-in" data-aos-duration="300"></blog>
+        </div>
+        <div class="col-12 d-flex justify-content-center">
+            <a class="icon-link icon-link-hover" :href="utilities.env('/blogs/')">
+                check all blogs
+                <i class="bi bi-arrow-right"></i>
+            </a>
         </div>
     </div>
     

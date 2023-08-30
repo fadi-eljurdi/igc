@@ -129,7 +129,7 @@ const app = Vue.createApp({
             for(let i = 0; i < STAR_COUNT; i++){
                 result += `${randomNumber(-50, 50)}vw ${randomNumber(-50, 50)}vh ${randomNumber(0, 3)}px ${randomNumber(0, 3)}px #fff,`
             }
-            console.log(result.substring(0, result.length - 1))
+            // console.log(result.substring(0, result.length - 1))
         },
         getProfile(){
             this.spinner = true
@@ -141,15 +141,15 @@ const app = Vue.createApp({
                 store.profile.services.forEach(s => {
                     if( s.index == '1'){
                         s.homeThumbnail = 'https://drive.google.com/uc?id=13u85aFqeV7uhB7mHcajU32HZHKeM-1Tc'
-                        console.log(s);
+                        // console.log(s);
                     }
                     if( s.index == '2'){
                         s.homeThumbnail = 'https://drive.google.com/uc?id=1kabiXH2dmutr3lX2rHEyY50dXeLLBQAt'
-                        console.log(s);
+                        // console.log(s);
                     }
                     if( s.index == '3'){
                         s.homeThumbnail = 'https://drive.google.com/uc?id=1FHzpEE9EeAC0qBpvsxji5LFjsc7V6FtC'
-                        console.log(s);
+                        // console.log(s);
                     }
                 })
             }).catch(err => {
