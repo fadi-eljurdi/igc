@@ -42,6 +42,10 @@ body {
 
 }
 
+article{
+    word-break: break-word !important;
+}
+
 .text-dark-blue{
     color: var(--dark-blue) !important;
 }
