@@ -68,10 +68,25 @@ function shareBlog(title, url) {
     }
 }
 
+function extractImageId(imageUrl) {
+    // Regular expression to match the ID pattern in the URL
+    const idRegex = /(?:id=)([^&]+)/;
+
+    // Use the regex to extract the ID from the URL
+    const match = imageUrl.match(idRegex);
+
+    // Check if a match is found
+    if (match && match[1]) {
+        return match[1];
+    } else {
+        // If no match is found, return null or handle it as needed
+        return null;
+    }
+}
 
 function getYouTubeId(url) {
     const regex = /^(?:https?:\/\/)?(?:www\.)?(?:youtube\.com\/(?:watch\?v=|embed\/|shorts\/|live\/\?v=)|youtu\.be\/)([^\s&]+)/;
-    const match = url.match(regex);    
+    const match = url.match(regex);
     return match ? match[1] : null;
 }
 
@@ -83,5 +98,6 @@ export default {
     timo,
     fixClosingTags,
     shareBlog,
-    getYouTubeId
+    getYouTubeId,
+    extractImageId
 }

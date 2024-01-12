@@ -35,7 +35,7 @@
             <a :href="s.url" class="no-decoration" :title="s.title">
                 <div class="p-3 pop d-flex flex-column gap-2 bg-light shadow-sm rounded">
                     <div class="d-flex gap-3 align-items-center">
-                        <img :src="s.homeThumbnail" width="100" alt="s1" class="img-fluid border rounded-circle">
+                        <img :src="'https://lh3.googleusercontent.com/d/'+utilities.extractImageId(s.homeThumbnail)" width="100" alt="s1" class="img-fluid border rounded-circle">
                         <h4 class="fs-6 text-primary text-fade-3 m-0 d-flex justify-content-center align-items-center" style="min-height: 125px;">{{s.title}}</h4>
                     </div>
                     <p class="text-secondary fs-smaller text-fade-3 m-0">{{s.description}}</p>

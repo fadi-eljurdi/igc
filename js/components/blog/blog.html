@@ -1,6 +1,7 @@
 <a :href="blog.url" class="no-decoration p-3 pop d-flex flex-column gap-2 bg-light shadow-sm rounded">
     <div class="ratio ratio-16x9">
-        <img :src="blog.thumbnail" :alt="blog.title" class="img-fluid object-fit-cover rounded">
+        <img :src="'https://lh3.googleusercontent.com/d/'+utilities.extractImageId(blog.thumbnail)" :alt="blog.title"
+            class="img-fluid object-fit-cover rounded">
     </div>
     <h4 style="min-height: 50px;" class="fs-4 text-primary fw-bold m-0 text-fade-2">{{blog.title}}</h4>
     <div class="">

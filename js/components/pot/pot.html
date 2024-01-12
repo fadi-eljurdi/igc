@@ -1,6 +1,6 @@
 <section class="d-flex flex-column position-relative z-1 ">
     <div class="ratio ratio-3x4 overflow-hidden neon-hover rounded">
-        <img :src="data.thumbnail" alt="service" class="skeleton img-zoom img-fluid object-fit-cover rounded img-brightness rounded">
+        <img :src="'https://lh3.googleusercontent.com/d/'+utilities.extractImageId(data.thumbnail)" alt="service" class="skeleton img-zoom img-fluid object-fit-cover rounded img-brightness rounded">
     </div>
     <div class="w-100 pot-info p-3 rounded">
         <h5 style="min-height: 45px;" class="text-light text-fade-2 fs-5 pop fw-bold ">{{data.title}}</h5>

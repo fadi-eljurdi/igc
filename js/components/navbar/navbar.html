@@ -2,7 +2,7 @@
     <section>
       <a class="no-decoration" :href="utilities.env('/')" >
         <div class="d-flex gap-1 align-items-center">
-          <img :src="store.profile.contact.logo" alt="logo" class="img-fluid img-scale" width="50" >
+          <img :src="'https://lh3.googleusercontent.com/d/'+utilities.extractImageId(store.profile.contact.logo)" alt="logo" class="img-fluid img-scale" width="50" >
           <h1 class="fs-3 ls-2 bebas text-shadoww m-0 text-center text-md-start">IncuGameCon</h1>
         </div>
       </a>
